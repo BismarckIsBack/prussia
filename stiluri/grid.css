@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', Verdana, Tahoma, sans-serif;
+}
+
+body {
+  height: 100dvh;
+  display: grid;
+  grid-template-columns: 16rem 1fr 16rem; 
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+    "header header header"
+    "stanga main dreapta"
+    "footer footer footer";
+}
+
+header {
+  grid-area: header;
+  height: 5.5rem;
+  top: 0;
+  position: sticky;
+}
+
+.stanga {
+  grid-area: stanga;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  background-image: url("../imagini/bara.png");
+  background-repeat: no-repeat;
+  transform: rotateY(180deg);
+  border-left: 10px ridge rgb(175, 130, 96);
+  position: sticky;
+  height: 100dvh;
+  top: 5.5rem;
+  box-sizing: border-box;
+  align-self: start;
+}
+
+main {
+  background-color: rgb(205,168,130);
+  grid-area: main;
+  padding: 20px;
+  min-height: 100dvh;
+}
+
+.dreapta {
+  grid-area: dreapta;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  border-left: 10px ridge rgb(175, 130, 96);
+  position: sticky;
+  height: 100dvh;
+  top: 5.5rem;
+  box-sizing: border-box;
+  background-image: url("../imagini/bara.png");
+  background-repeat: no-repeat;
+}
+
+footer {
+  grid-area: footer;
+  background-color: rgb(120,6,6);
+  color: white;
+  text-align: center;
+  min-height: 5.5rem;
+  z-index: 99;
+}
