@@ -1,0 +1,68 @@
+.continut {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.subtitlu {
+  font-size: 2rem;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  text-align: justify;
+  font-size: 1.15rem;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+}
+
+.titlu-capitol {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-top: 1rem;
+  padding-bottom: 0.2rem;
+}
+hr {
+  border: none;
+  border-top: 1px solid black;
+  padding-bottom: 1rem;;
+} 
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.3rem;
+  border: 1px solid black;
+  background-color: rgba(228, 192, 156, 0.745);
+  width: 300px;
+  height: auto;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  padding-top: 0.3rem;
+}
+
+.imagine {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: auto;
+}
+
+.sectiune-text {
+  flex-wrap: wrap; 
+}
+
