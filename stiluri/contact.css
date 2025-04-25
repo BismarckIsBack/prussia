@@ -1,0 +1,66 @@
+.principal {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  overflow: hidden;
+}
+
+.formular {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  transition-duration: 0.2s;
+  padding: 2rem;
+  background-color: rgba(170, 95, 95, 0.692);
+  height: 100%;
+}
+
+.titlu-formular {
+  font-size: 2rem;
+
+}
+
+.date-contact {
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+h1 {
+  text-align: justify;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+input, textarea, button {
+  border: 0;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.5rem;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.container-contact {
+  display: flex;
+  align-items: start;
+  column-gap: 1rem;
+}
+
+.nume {
+
+}
+
+.email {
+
+}
+
+.mesaj {
+  resize: none;
+  height: 10rem;
+}
+
+.imagine img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This makes the image cover the container */
+  object-position: center; /* Center the image */
+}

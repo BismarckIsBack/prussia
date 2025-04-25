@@ -1,0 +1,141 @@
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(245, 222, 179);
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  z-index: 99;
+}
+
+.optiune {
+  text-decoration: none;
+  color: black;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  transition-duration: 0.5s;
+}
+
+.optiune-acasa {
+  text-decoration: none;
+  color: black;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  transition-duration: 0.3s;
+}
+
+.optiune-acasa:hover {
+  opacity: 0.6;
+  transition-duration: 0.3s;
+}
+
+.optiune-antet {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  height: 100%;
+  padding: 0;
+  cursor: pointer;
+  color: wheat;
+  transition-duration: 0.5s;
+}
+
+.lista-antet {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.optiune-antet:hover .optiune:hover {
+  background-color: red;
+  color:wheat !important;
+  transition-duration: 0.5s;
+}
+
+.logo {
+  height: 100px;
+  width: 90px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.navigatie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  padding-left: 24px;
+}
+
+.titlu {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.caseta-ani {
+  position: absolute;
+  background-color: rgb(250, 111, 89);
+  z-index: 9999;
+  display: flex;
+  top: 5.5rem;
+  flex-direction: column;
+  row-gap: 0.4rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  animation-name: fadeIn;
+  animation-duration: 0.6s;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  border-radius: 0 0 5% 5%;
+}
+
+.an {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition-duration: 0.5s;
+  text-align: center;
+}
+
+.an:hover {
+  background-color: wheat;
+  transition-duration: 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

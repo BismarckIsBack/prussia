@@ -1,0 +1,123 @@
+.quiz-container {
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgb(240, 231, 216);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.titlu-quiz {
+  font-size: 2.2rem;
+  color: rgb(44, 62, 80);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.descriere {
+  font-size: 1.2rem;
+  color: rgb(127, 140, 141);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.start, .restart, .continuare {
+  display: block;
+  width: 200px;
+  margin: 1.5rem auto;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(52, 152, 219);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.start:hover, .restart:hover, .continuare:hover {
+  background-color: rgb(41, 128, 185);
+  transform: translateY(-2px);
+}
+
+.contor-intrebare {
+  font-size: 1rem;
+  color: rgb(127, 140, 141);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.intrebare {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(44, 62, 80);
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.raspunsuri {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.raspuns {
+  padding: 1rem;
+  font-size: 1.1rem;
+  background-color: white;
+  border: 0.125rem solid rgb(189, 195, 199);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.raspuns:hover {
+  background-color: rgb(241, 241, 241);
+  border-color: #95a5a6;
+}
+
+.raspuns.corect {
+  background-color: #2ecc71;
+  color: white;
+  border-color: rgb(39, 174, 96);
+}
+
+.raspuns.gresit {
+  background-color: rgb(231, 76, 60);
+  color: white;
+  border-color: rgb(192, 57, 43);
+}
+
+.raspuns:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.rezultat-final {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rezultat-final p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.rezultat-final strong {
+  color: rgb(52, 152, 219);
+  font-size: 1.3rem;
+}
+
+.continuare {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.continuare:hover {
+  background-color: rgb(25, 58, 40) !important;
+}

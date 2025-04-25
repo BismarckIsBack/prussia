@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Colorit</title>
+    <style>
+      .cerc {
+        background-color: rgb(0, 0, 0);
+        border-radius: 50%;
+        height: 400px;
+      }
+      .colorit {
+        display: block;
+        margin-top: 10px;
+      }
+      </style>
+    </head>
+  </head>
+  <body>
+    <div class="cerc">rgb(0,0,0)</div>
+    <button class="colorit" onclick="schimbareCuloare()">Schimba culoarea!</button>
+    <script>
+      function randomizare(nr) {
+        return Math.floor(Math.random()*nr);
+      }
+      function schimbareCuloare() {
+        const cerc = document.querySelector('.cerc');
+        let culoare = `rgb(${randomizare(255)},${randomizare(255)},${randomizare(255)})`;
+        cerc.style.backgroundColor = culoare; 
+        cerc.innerHTML = culoare;
+        console.log(`${culoare} NIGGERS!`);
+      }
+    </script>
+  </body>
+</html>
